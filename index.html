@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Delivery App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>🍔 Foodify</h1>
+        <p>Delicious food, fast delivery</p>
+    </header>
+
+    <main class="container">
+
+        <input type="text" class="search" placeholder="🔍 Search for food">
+
+        <section class="categories">
+            <button class="active">🍕 Pizza</button>
+            <button>🍔 Burger</button>
+            <button>🥤 Drinks</button>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x180" alt="Food">
+                <div class="card-content">
+                    <h3>Cheese Pizza</h3>
+                    <p>Hot & cheesy delight</p>
+                    <div class="price-row">
+                        <span>$8.99</span>
+                        <button onclick="order()">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x180" alt="Food">
+                <div class="card-content">
+                    <h3>Classic Burger</h3>
+                    <p>Juicy & tasty</p>
+                    <div class="price-row">
+                        <span>$6.49</span>
+                        <button onclick="order()">Order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+        <span class="active">🏠 Home</span>
+        <span>🛒 Orders</span>
+        <span>👤 Profile</span>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
